@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>两行图片（无滚动，全部显示）</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            overflow-x: hidden;
+        }
+        /* 每一行的容器：12张图自动等宽排列 */
+        .img-row {
+            display: flex;
+            width: 100%;
+        }
+        /* 图片自动缩放，填满行宽，保持画质比例 */
+        .img-row img {
+            flex: 1;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <!-- 第一行：1-12张图 -->
+    <div class="img-row">
+        <img src="1.png" alt="图1">
+        <img src="2.png" alt="图2">
+        <img src="3.png" alt="图3">
+        <img src="4.png" alt="图4">
+        <img src="5.png" alt="图5">
+        <img src="6.png" alt="图6">
+        <img src="7.png" alt="图7">
+        <img src="8.png" alt="图8">
+        <img src="9.png" alt="图9">
+        <img src="10.png" alt="图10">
+        <img src="11.png" alt="图11">
+        <img src="12.png" alt="图12">
+    </div>
+    <!-- 第二行：13-24张图 -->
+    <div class="img-row">
+        <img src="13.png" alt="图13">
+        <img src="14.png" alt="图14">
+        <img src="15.png" alt="图15">
+        <img src="16.png" alt="图16">
+        <img src="17.png" alt="图17">
+        <img src="18.png" alt="图18">
+        <img src="19.png" alt="图19">
+        <img src="20.png" alt="图20">
+        <img src="21.png" alt="图21">
+        <img src="22.png" alt="图22">
+        <img src="23.png" alt="图23">
+        <img src="24.png" alt="图24">
+    </div>
+</body>
+</html>
